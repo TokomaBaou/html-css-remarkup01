@@ -2,10 +2,25 @@
   font-family: sans-serif;
   text-align: center;
 }
-.header-top {
+/* .header-top {
   padding: 1rem 2rem;
   color: #fff;
   background: #094;
   -webkit-box-shadow: 5px 5px 0 #007032;
   box-shadow: 5px 5px 0 #007032;
+} */
+
+.header-top {
+  padding: 1rem 3rem;
+  color: #fff;
+  /* border-radius: 0vh; */
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#9be15d),
+    to(#00e3ae)
+  );
+  background-image: -webkit-linear-gradient(right, #9be15d 0%, #00e3ae 100%);
+  background-image: linear-gradient(to left, #9be15d 0%, #00e3ae 100%);
 }
