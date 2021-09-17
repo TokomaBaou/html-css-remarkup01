@@ -1,6 +1,9 @@
 import "./styles.css";
 import React from "react";
 import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { IconButton } from "@chakra-ui/button";
+import { SearchIcon } from "@chakra-ui/icons";
+// import { Button, ButtonGroup } from "@chakra-ui/react"
 
 export default function App() {
   return (
@@ -38,6 +41,11 @@ export default function App() {
           <Route exact path="/"></Route>
         </Switch>
       </BrowserRouter>
+      <IconButton
+        colorScheme="blue"
+        aria-label="Search database"
+        icon={<SearchIcon />}
+      />
     </>
   );
 }
